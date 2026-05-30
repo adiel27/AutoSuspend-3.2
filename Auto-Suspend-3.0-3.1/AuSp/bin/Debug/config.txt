@@ -1,0 +1,13 @@
+[EXCLUDED]
+explorer.exe
+taskmgr.exe
+
+[EFFICIENCY]
+steam.exe
+steamwebhelper.exe
+msedge.exe
+spotify.exe
+ApplicationFrameHost.exe
+photoshop.exe
+wmplayer.exe
+code.exe

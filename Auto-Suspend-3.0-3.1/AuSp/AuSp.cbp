@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="AuSp" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/AuSp" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/AuSp" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="AuSp.cbp" />
+		<Unit filename="cpu_utils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cpu_utils.h" />
+		<Unit filename="log_utils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="log_utils.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="notify_utils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="notify_utils.h" />
+		<Unit filename="process_utils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="process_utils.h" />
+		<Unit filename="window_utils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="window_utils.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

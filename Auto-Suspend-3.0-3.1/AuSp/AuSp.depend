@@ -1,0 +1,88 @@
+# depslib dependency file v1.0
+1759246526 source:c:\users\adieru\documents\ausp\ausp\main.c
+	"process_utils.h"
+	"window_utils.h"
+	"cpu_utils.h"
+	"log_utils.h"
+
+1759210169 c:\users\adieru\documents\ausp\ausp\process_utils.h
+	<windows.h>
+
+1759246249 c:\users\adieru\documents\ausp\ausp\window_utils.h
+	<windows.h>
+
+1759246323 c:\users\adieru\documents\ausp\ausp\cpu_utils.h
+	<windows.h>
+
+1759246443 c:\users\adieru\documents\ausp\ausp\log_utils.h
+	<windows.h>
+
+1759246352 source:c:\users\adieru\documents\ausp\ausp\cpu_utils.c
+	"cpu_utils.h"
+	<psapi.h>
+	<stdio.h>
+
+1759246464 source:c:\users\adieru\documents\ausp\ausp\log_utils.c
+	"log_utils.h"
+	<stdio.h>
+	<time.h>
+
+1759245667 source:c:\users\adieru\documents\ausp\ausp\process_utils.c
+	"process_utils.h"
+	<tlhelp32.h>
+	<stdio.h>
+	<string.h>
+	"window_utils.h"
+	"cpu_utils.h"
+	"log_utils.h"
+
+1759246247 source:c:\users\adieru\documents\ausp\ausp\window_utils.c
+	"window_utils.h"
+
+1778948282 source:c:\users\adieru\downloads\auto-suspend-3.0-3.1\ausp\main.c
+	"process_utils.h"
+	<stdio.h>
+	<windows.h>
+
+1780025171 c:\users\adieru\downloads\auto-suspend-3.0-3.1\ausp\process_utils.h
+	<windows.h>
+
+1778945159 c:\users\adieru\downloads\auto-suspend-3.0-3.1\ausp\window_utils.h
+	<windows.h>
+
+1759287870 c:\users\adieru\downloads\auto-suspend-3.0-3.1\ausp\cpu_utils.h
+	<windows.h>
+
+1759287870 c:\users\adieru\downloads\auto-suspend-3.0-3.1\ausp\log_utils.h
+	<windows.h>
+
+1759287870 c:\users\adieru\downloads\auto-suspend-3.0-3.1\ausp\notify_utils.h
+
+1759287870 source:c:\users\adieru\downloads\auto-suspend-3.0-3.1\ausp\cpu_utils.c
+	"cpu_utils.h"
+	<psapi.h>
+	<stdio.h>
+
+1759287870 source:c:\users\adieru\downloads\auto-suspend-3.0-3.1\ausp\log_utils.c
+	"log_utils.h"
+	<stdio.h>
+	<time.h>
+
+1759287870 source:c:\users\adieru\downloads\auto-suspend-3.0-3.1\ausp\notify_utils.c
+	"notify_utils.h"
+	<windows.h>
+
+1778945135 source:c:\users\adieru\downloads\auto-suspend-3.0-3.1\ausp\window_utils.c
+	"window_utils.h"
+
+1778948266 source:c:\users\adieru\downloads\auto-suspend-3.0-3.1\ausp\process_utils.c
+	"process_utils.h"
+	<tlhelp32.h>
+	<stdio.h>
+	<string.h>
+	<time.h>
+	<psapi.h>
+	"window_utils.h"
+	"cpu_utils.h"
+	"log_utils.h"
+
