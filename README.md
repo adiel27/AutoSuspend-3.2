@@ -93,6 +93,44 @@ To transition AuSp from an experimental utility to a transparent, permanent syst
 3. **Conditions Tab:** Uncheck **"Start the task only if the computer is on AC power"**. This permits AuSp to continuously safeguard battery longevity and manage performance curves organically while on mobile juice.
 4. **Settings Tab:** Disable the default constraint **"Stop the task if it runs longer than..."** to allow the utility to maintain uninterrupted system resource monitoring throughout the entire OS uptime lifecycle.
 
+## Build Flow
+## 🛠 Compilation & Build Workflow
 
+Since AuSp is modularly structured across separate C source files, the compilation process follows a standard Win32 toolchain pipeline (GCC/MinGW via Code::Blocks) to compile, link, deploy, and automate the application.
 
-*Developed as a researcher-grade solution for custom OS workspace scheduling optimization.*
+Below is the conceptual architecture of how the files are built and deployed:
+
+```text
+ [ SOURCE STAGE ]              [ COMPILATION STAGE ]          [ LINKING & RUNTIME STAGE ]
+ 
+  +------------+
+  |   main.c   | ------------> [ GCC Compiler ] ------+
+  +------------+                                      |
+  +------------+                                      |
+  | cpu_utils  | ------------> [ GCC Compiler ] ------|      +---------------------+
+  +------------+                                      |--->  |      AuSp.exe       |
+  +------------+                                      |      | (Linked Executable) |
+  |proc_utils  | ------------> [ GCC Compiler ] ------|      +---------------------+
+  +------------+                                      |                 |
+  +------------+                                      |                 v
+  |win_utils   | ------------> [ GCC Compiler ] ------+       [ Reads System Rules ]
+  +------------+                                                        |
+  +------------+                                                        v
+  | log/notify | ------------> [ GCC Compiler ]               +---------------------+
+  +------------+                                              |     config.txt      |
+                                                              +---------------------+
+                                                                        |
+                                                                        v
+                                                             [ DEPLOYMENT AUTOMATION ]
+                                                                        |
+                                                                        v
+                                                              +---------------------+
+                                                              |Windows Task Scheduler|
+                                                              | (Highest Privileges)|
+                                                              +---------------------+
+                                                                        |
+                                                                        v
+                                                              [ SYSTEM ENFORCEMENT ]
+                                                               - High Priority (FG)
+                                                               - Eco Mode (BG Core)
+                                                               - RAM Purge (~2MB)
